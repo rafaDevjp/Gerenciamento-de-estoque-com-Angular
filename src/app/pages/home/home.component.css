@@ -1,0 +1,42 @@
+.home .title{
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.home .subtitle{
+    font-size: 1.1em;
+}
+.material-icons.md-48 { 
+    font-size: 190px; 
+}
+.material-icons.primaryColor{
+    color: rgb(20, 121, 216);
+}
+
+.material-icons.successColor{
+    color: rgb(38, 153, 48);
+}
+
+.material-icons.warningColor{
+    color: rgb(216, 196, 20);
+}
+
+.container{
+    display: flex;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (min-width: 1920px){
+    .container{
+        width: 80%;
+        height: 660px;
+    }
+    .material-icons.md-48 { 
+        font-size: 290px; 
+    }
+}

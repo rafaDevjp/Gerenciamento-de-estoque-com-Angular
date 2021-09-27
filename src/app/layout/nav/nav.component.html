@@ -1,0 +1,35 @@
+<!-- Master page -->
+
+
+<!-- Menu Cabeçalho -->
+<app-header></app-header>
+
+
+<!-- Side-Nav (Menu de navegação lateral) -->
+<mat-sidenav-container class="container">
+    <mat-sidenav class="side-nav" mode="side" opened fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list class="nav-list"> 
+            <a [routerLink]="['']" mat-list-item >
+                <i class="material-icons">
+                    home
+                </i>
+                Inicio
+            </a>
+            <a [routerLink]="['pages/products']"  mat-list-item>
+                <i class="material-icons">
+                    view_list
+                </i>
+                Produtos
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+        
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
+
+
+<!-- Elemento footer -->
+<app-footer></app-footer>

@@ -1,0 +1,44 @@
+table {
+    
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 20%;
+  }
+  
+  td, th {
+    width: 10%;
+  }
+
+  button{
+      top:-4px;
+      position: relative;
+      height: 50px;
+     
+      margin:0px 20px;
+  }
+
+  .actions {
+      text-decoration: none;
+      text-align: center;
+      margin: 0px 5px ;
+  }
+
+  .actions.delete{
+      color: rgb(231, 48, 48);
+  }
+
+  .actions.edit{
+      color: rgb(87, 58, 218);
+  }
+
+  .mat-title{
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1.2;
+      padding: 30px 0px ;
+  } 
+
+  

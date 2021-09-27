@@ -1,0 +1,26 @@
+.side-nav{
+    background: #3f51b5;
+    width: 150px;
+   
+}
+
+.side-nav a {
+  color: whitesmoke
+  
+}
+.side-nav i {
+    padding-right: 10px;
+}
+
+.content{
+  box-sizing: border-box;
+  padding:15px;
+  margin: auto;
+
+}
+
+.container{
+  margin-top: 1px;
+}
+  
+ 

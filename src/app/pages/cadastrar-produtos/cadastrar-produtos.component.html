@@ -1,0 +1,73 @@
+<mat-card class="mat-margin ">
+    <mat-card-title class="mat-title">Criar novo produto</mat-card-title>
+</mat-card>
+
+<mat-card>
+    <form [formGroup]="productForms" (ngSubmit)="onSubmit()">
+        <span>
+            <mat-form-field appearance="outline" class="input-with">
+                <mat-label>Produto</mat-label>
+                <input  matInput formControlName="name"  placeholder="Nome do Produto">
+                <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                <mat-hint>Nome do Produto</mat-hint>
+            </mat-form-field>
+        </span>
+        <span>
+            <mat-form-field appearance="outline" class="input-with">
+                <mat-label>Marca</mat-label>
+                <input  matInput formControlName="marca"  placeholder="Marca do Produto">
+                <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                <mat-hint>Marca do Produto</mat-hint>
+            </mat-form-field>
+        </span>
+        <span>
+            <mat-form-field appearance="outline" class="input-with">
+                <mat-label>Preço(R$)</mat-label>
+                <input matInput  formControlName="price" placeholder="Valor Do Produto">
+                <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                <mat-hint>Valor R$</mat-hint>
+            </mat-form-field>
+        </span>
+        
+        <span>
+            <mat-form-field appearance="outline" class="input-with">
+                <mat-label>Categoria</mat-label>
+                <input matInput formControlName="categoria" placeholder="Tipo Do Produto">
+                <!-- <mat-icon  matSuffix>sentiment_very_satisfied</mat-icon> -->
+                <mat-hint>Categoria</mat-hint>
+            </mat-form-field>
+        </span>
+        <span>
+            <mat-form-field appearance="outline" class="input-with">
+                <mat-label>CodProduto</mat-label>
+                <input matInput formControlName="codProduto" placeholder="Código de Barra">
+                <!-- <mat-icon  matSuffix>sentiment_very_satisfied</mat-icon> -->
+                <mat-hint>Código de barra</mat-hint>
+            </mat-form-field>
+        </span>
+        <span>
+            <mat-form-field appearance="outline" class="input-with">
+                <mat-label>Nº Lote</mat-label>
+                <input matInput formControlName="lote" placeholder="Numero do lote">
+                <!-- <mat-icon  matSuffix>sentiment_very_satisfied</mat-icon> -->
+                <mat-hint>Numero do Lote</mat-hint>
+            </mat-form-field>
+        </span>
+        <span>
+            <mat-form-field appearance="outline" class="input-with">
+                <mat-label>Nº Quantidade</mat-label>
+                <input matInput formControlName="quantidade" placeholder="Nº Quantidade">
+                <!-- <mat-icon  matSuffix>sentiment_very_satisfied</mat-icon> -->
+                <mat-hint>Conteudo do Lote </mat-hint>
+            </mat-form-field>
+        </span>
+        <p>Complete oformulário para ativar o botão "Adicionar Produto"</p>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!productForms.valid">Adicionar Produto</button>
+        <button mat-raised-button color="warn" (click)="revoke()">Voltar</button>
+    </form>
+</mat-card>
+
+
+
+
+<!-- <button mat-raised-button color="primary" (click)="createProduct()">Cadastrar</button> -->

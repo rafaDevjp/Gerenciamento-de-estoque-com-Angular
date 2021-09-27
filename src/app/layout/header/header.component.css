@@ -1,0 +1,18 @@
+.example-spacer {
+    flex: 1 1 auto;
+   margin-bottom: 2px;
+  }
+
+a{
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+} 
+
+#icon-title{
+    position:relative;
+    top: 3px;
+    
+}
+
+
+
